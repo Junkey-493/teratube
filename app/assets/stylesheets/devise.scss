@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 660px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #FF0000;
+  background-color: #FF0000;
+  color: #FAFAFA;
+  font-size: 24px;
+}
+.form {
+  margin: 0 auto;
+  border: 1px solid #000000;
+  max-width: 660px;
+  width: 100%;
+  padding: 30px;
+  .greeting {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  .field {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 15px;
+    .label {
+      margin-bottom: 5px;
+    }
+    .nickname {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #D8D8D8;
+      border-radius: 5px;
+      font-family: "游ゴシック", "YuGothic";
+    }
+    .email {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #D8D8D8;
+      border-radius: 5px;
+      font-family: "游ゴシック", "YuGothic";
+    }
+    .password {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #D8D8D8;
+      border-radius: 5px;
+      font-family: "游ゴシック", "YuGothic";
+    }
+  }
+  .actions {
+    background-color: #FF0000;
+    border-radius: 20px;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+
+  }
+}

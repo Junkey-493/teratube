@@ -54,6 +54,23 @@
     display: flex;
     margin-top: 8px;
     text-align: center;
+    &__post {
+      width: 60px;
+      height: 32px;
+      background-color: #F5511D;
+      color: white;
+      margin-right: 16px;
+      font-size: 14px;
+      line-height: 32px;
+    }
+    &__log-out {
+      width: 80px;
+      height: 32px;
+      background-color: #38AEF0;
+      color: white;
+      font-size: 14px;
+      line-height: 32px;
+    }
     &__log-in {
       width: 60px;
       height: 32px;
