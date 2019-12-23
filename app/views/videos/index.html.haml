@@ -11,10 +11,12 @@
     .top__center__search-button
       = icon('fas', 'search')
   .top__right
-    .top__right__log-in
-      ログイン
-    .top__right__sign-in
-      新規登録
+    - if user_signed_in?
+      = link_to "投稿する", "/videos/new", class: 'top__right__post'
+      = link_to "ログアウト", destroy_user_session_path, class: 'top__right__log-out', method: :delete 
+    - else
+      = link_to "ログイン", new_user_session_path, class: 'top__right__log-in'
+      = link_to "新規登録", new_user_registration_path, class: 'top__right__sign-in' 
 .bottom
   .bottom__recommend
     あなたにおすすめ
