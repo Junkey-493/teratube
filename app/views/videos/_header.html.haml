@@ -1,0 +1,19 @@
+.top
+  .top__left
+    .top__left__guide-button
+      = icon('fas', 'bars')
+    .top__left__app-name
+      teratube
+    .top__left__from
+      JP
+  .top__center
+    %input.top__center__search-input{type: 'text', placeholder: '検索', value: '', nema: 'search'}
+    .top__center__search-button
+      = icon('fas', 'search')
+  .top__right
+    - if user_signed_in?
+      = link_to "投稿する", "/videos/new", class: 'top__right__post'
+      = link_to "ログアウト", destroy_user_session_path, class: 'top__right__log-out', method: :delete 
+    - else
+      = link_to "ログイン", new_user_session_path, class: 'top__right__log-in'
+      = link_to "新規登録", new_user_registration_path, class: 'top__right__sign-in' 
