@@ -1,0 +1,34 @@
+.user-uploaded {
+  width: 700px;
+  margin: 0 auto;
+  &__video {
+    width: 640px;
+    height: 360px;
+  }
+  &__title {
+    font-size: 18px;
+  }
+  &__detail {
+    display: flex;
+    &__view-count {
+      color: #666666;
+      font-size: 16px;
+      line-height: 2rem;
+      max-height: 4rem;
+      padding-bottom: 1px;
+
+    }
+    &__time {
+      color: #666666;
+      font-size: 16px;
+      line-height: 2rem;
+      max-height: 4rem;
+      margin-left: 10px;
+      padding-bottom: 1px;
+    }
+  }
+  &__user-name {
+    font-size: 30px;
+  }
+}
+
