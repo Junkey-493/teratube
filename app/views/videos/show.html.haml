@@ -1,7 +1,7 @@
 = render "header"
 .user-uploaded
   .user-uploaded__video
-    = video_tag 'hello teratube.mp4', autoplay: true, loop: true, muted: true, controls: true, preload: true, class: 'user-uploaded__video'
+    = video_tag @video.video_url, autoplay: true, loop: true, muted: true, controls: true, preload: true, class: 'user-uploaded__video'
   .user-uploaded__title
     = @video.title
   .user-uploaded__detail

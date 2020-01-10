@@ -7,9 +7,12 @@ class VideosController < ApplicationController
   end
 
   def new
+    @video = Video.new
   end
 
   def create
+    Video.create(video_params)
+    redirect_to root_path
   end
 
   def show
@@ -17,6 +20,10 @@ class VideosController < ApplicationController
 
   private
 
+  def video_params
+    params.require(:video).permit(:title, :video, :image).merge(user_id: current_user.id)
+  end
+  
   def find_video
     @video = Video.find(params[:id])
   end

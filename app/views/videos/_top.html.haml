@@ -2,11 +2,7 @@
   %li.bottom__items__item
     = link_to video do
       .bottom__items__item__video
-        - if video.image.cached?
-          - video.image.first(1).each do |image|
-            = image_tag image, class: 'bottom__items__item__video'
-        - else
-          = image_tag 'https://www.nanohana-ph.jp/images/shop/noimage.png', class: 'bottom__items__item__video'
+        = image_tag video.image_url, class: 'bottom__items__item__video'
       .bottom__items__item__title
         = video.title
       .bottom__items__item__user-name
