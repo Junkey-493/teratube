@@ -12,13 +12,13 @@
     .submit-page-topic__image
       サムネイル画像
       %label.submit-page-topic__image__label
-        = f.file_field :image, class: 'submit-page-topic__image__label__upload'
+        = f.file_field :image, class: 'submit-page-topic__image__label__upload', id: 'upload-image'
         %pre.submit-page-topic__image__label__message
           画像を貼り付けてください
     .submit-page-topic__video
       あなたの投稿動画
       %label.submit-page-topic__video__label
-        = f.file_field :video, class: 'submit-page-topic__video__label__upload'
+        = f.file_field :video, class: 'submit-page-topic__video__label__upload', id: 'upload-video'
         %pre.submit-page-topic__video__label__message
           動画を貼り付けてください
     .submit-page-topic__submit
