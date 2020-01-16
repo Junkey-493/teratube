@@ -1,13 +1,14 @@
 = render "header"
 .user-uploaded
   .user-uploaded__video
-    = video_tag @video.video_url, autoplay: true, loop: true, muted: true, controls: true, preload: true, class: 'user-uploaded__video'
+    = video_tag @video.video_url, autoplay: true, muted: true, controls: true, preload: true, class: 'user-uploaded__video'
   .user-uploaded__title
     = @video.title
   .user-uploaded__detail
     .user-uploaded__detail__view-count
-      10,000回視聴
+      = @video.impressionist_count
+      回視聴・
     .user-uploaded__detail__time
-      一年前
+      = @video.created_at.strftime("%Y/%m/%d")
   .user-uploaded__user-name
     = @video.user.nickname
