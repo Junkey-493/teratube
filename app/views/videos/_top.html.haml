@@ -9,6 +9,7 @@
         = video.user.nickname
       .bottom__items__item__detail
         .bottom__items__item__detail__view-count
-          10,000回視聴
+          = video.impressionist_count
+          回視聴・
         .bottom__items__item__detail__time
-          一年前
+          = time_ago_in_words(video.created_at) + '前'

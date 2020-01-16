@@ -1,6 +1,7 @@
 class VideosController < ApplicationController
   before_action :find_video, only: [:show]
   before_action :move_to_index, except: [:index, :show]
+  impressionist actions: [:show]
 
   def index
     @videos = Video.all.order(created_at: :DESC)
@@ -16,6 +17,7 @@ class VideosController < ApplicationController
   end
 
   def show
+    impressionist(@video, nil, unique: [:session_hash])
   end
 
   private
