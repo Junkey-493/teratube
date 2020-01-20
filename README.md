@@ -1,24 +1,28 @@
-# README
+# teratube
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## リンク
 
-Things you may want to cover:
+### https://teratube.com
 
-* Ruby version
+* ID
+admin
 
-* System dependencies
+* パスワード
+tera00ch
 
-* Configuration
+## 開発環境
 
-* Database creation
+* Rails(5.2.3)
+* VSCode(Visual Studio Code)
 
-* Database initialization
+## アプリ説明
 
-* How to run the test suite
+![あなたの投稿した動画を世界中の方々と共有できる:smile:](https://gyazo.com/e1becaa2057b8dcbba6810f7cb1e585c)
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## ER図
 
-* ...
+![ER図を載せておきます](app/assets/images/teratubeのER図.jpg)
+
+## 作成者
+* Junkey-493
