@@ -1,8 +1,8 @@
 - @videos.each do |video|
-  %li.bottom__items__item
+  %li.bottom__items__item{data: {video: {id: video.id}}}
     = link_to video do
       .bottom__items__item__video
-        = image_tag video.image_url, class: 'bottom__items__item__video'
+        = image_tag video.image_url.to_s, alt: 'サムネイル画像なし' ,class: 'bottom__items__item__video'
       .bottom__items__item__title
         = video.title
       .bottom__items__item__user-name
