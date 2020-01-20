@@ -17,12 +17,12 @@ tera00ch
 
 ## アプリ説明
 
-![あなたの投稿した動画を世界中の方々と共有できる:smile:](https://gyazo.com/e1becaa2057b8dcbba6810f7cb1e585c)
+![あなたの投稿した動画を世界中の方々と共有できる!](https://user-images.githubusercontent.com/56882148/72724866-d7023c00-3bc7-11ea-9d7d-750c9d8ef527.gif)
 
 
 ## ER図
 
-![ER図を載せておきます](app/assets/images/teratubeのER図.jpg)
+![ER図を載せておきます](https://user-images.githubusercontent.com/56882148/72722672-3cebc500-3bc2-11ea-9946-e7d216adbc3c.jpg)
 
 ## 作成者
 * Junkey-493
