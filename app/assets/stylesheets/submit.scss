@@ -54,6 +54,13 @@
         font-size: 14px;
         line-height: 1.5;
       }
+      .preview-image {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: -100px;
+        right: 0px;
+      }
     }
   }
   &__video {
@@ -82,6 +89,13 @@
         text-align: center;
         font-size: 14px;
         line-height: 1.5;
+      }
+      .preview-video {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: -100px;
+        right: 0px;
       }
     }
   }
