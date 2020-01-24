@@ -1,3 +1,4 @@
+ActiveRecord::Base.protected_environments = %w(production staging)
 require_relative 'boot'
 
 require 'rails/all'
