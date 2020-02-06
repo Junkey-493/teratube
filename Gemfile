@@ -78,3 +78,4 @@ gem 'jquery-rails'
 gem 'rails-i18n', '~> 5.1'
 gem 'impressionist'
 gem 'fog-aws'
+gem "aws-sdk-s3", require: false
