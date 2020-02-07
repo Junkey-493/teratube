@@ -2,7 +2,10 @@
   %li.bottom__items__item{data: {video: {id: video.id}}}
     = link_to video do
       .bottom__items__item__video
-        = image_tag video.image_url.to_s, alt: 'サムネイル画像なし' ,class: 'bottom__items__item__video'
+        - if video.image.attached?
+          = image_tag video.image, class: 'bottom__items__item__video'
+        - else
+          = image_tag 'https://www.nanohana-ph.jp/images/shop/noimage.png', class: 'bottom__items__item__video', style: 'opacity: 1;'
       .bottom__items__item__title
         = video.title
       .bottom__items__item__user-name

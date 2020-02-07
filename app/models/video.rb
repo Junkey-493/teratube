@@ -1,7 +1,7 @@
 class Video < ApplicationRecord
   belongs_to :user
-  mount_uploader :image, ImageUploader
-  mount_uploader :video, VideoUploader
+  has_one_attached :image
+  has_one_attached :video
   validates :title, :video, presence: true
   is_impressionable
 end

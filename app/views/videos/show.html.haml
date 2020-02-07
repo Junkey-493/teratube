@@ -1,7 +1,8 @@
 = render "header"
 .user-uploaded
   .user-uploaded__video
-    = video_tag @video.video_url, autoplay: true, muted: true, controls: true, preload: true, class: 'user-uploaded__video'
+    - if @video.video.attached?
+      = video_tag(url_for(@video.video), autoplay: true, muted: true, controls: true, preload: true, class: 'user-uploaded__video')
   .user-uploaded__title
     = @video.title
   .user-uploaded__detail
